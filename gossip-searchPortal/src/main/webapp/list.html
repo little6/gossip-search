@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./img/style.css">
+    <link rel="stylesheet" href="./img/swiper.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./css/demo.css">
+
+
+</head>
+<body>
+<!-- 顶部搜索	 - start -->
+<div class="header">
+    <div class="head">
+        <div class="logo"><a href="#"><img src="./img/logo.png" width="100%" alt=""></a></div>
+        <form action="list.html" class="formBox">
+            <input type="text" class="inputSeach" id="inputSeach" name="keywords">
+            <input type="submit" value="搜索一下" class="inputSub">
+            <div class="recommend">
+                <div class="item">美团</div>
+                <div class="item">百度外卖</div>
+                <div class="item">美团</div>
+                <div class="item">百度外卖</div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 顶部搜索	 - end -->
+
+<div class="contentBox">
+    <!-- 中间左边区域 - start -->
+    <div class="contener_l">
+        <div class="count">
+            <div class="showTool">
+                <div class="toolBox">搜索引擎为您找到相关结果约17,800,000个 <span class="tool">搜索工具</span></div>
+                <div class="toolBox">
+
+                    从:<input class="easyui-datetimebox" style = "height: 25px ; width: 100px" name="dateStart" />
+                    至:<input class="easyui-datetimebox" style = "height: 25px ; width: 100px" name="dateEnd"/>
+                    <input type="button" onclick="ajaxQuery(1,5)" value="确定">
+
+                    <input  name="editor" placeholder="请输入编辑" onkeypress = "ajaxQuery(1,5)" style = "height: 15px ; width: 100px"/>
+                    <input  name="source" placeholder="请输入来源" onkeypress = "ajaxQuery(1,5)" style = "height: 15px ; width: 100px"/>
+                    <span class="tool openTool">收起工具</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="advItem">
+            <div class="item">
+                <div class="title"><img src="./img/logo.png" width="30px" height="30px" class="logo" alt=""><a href="#">北京防雷</a>_北京中普同安防雷科技
+                    <span>官网</span></div>
+                <div class="contentInfo_src">
+                    <a href="#"><img src="./img/item.jpeg" alt="" class="imgSrc" width="121px" height="75px"></a>
+                    <div class="infoBox">
+                        <p class="describe">
+                            产品: 波形电源防雷模块名称: 防雷产品销售品牌: 中普同安解决方案: 防雷防浪涌保护作用
+                            防雷产品销售,防雷系统工程设计与施工,安防器材销售及系统工程设计,安装,维护等.获得了各行业准入许可,打造了一套完善的供应..
+                        </p>
+                        <p><a class="showurl" href="www.zptafl.com">www.zptafl.com 2018-08</a> <span class="lab"><a
+                                href="">百度快照 - </a><a href="">品牌广告</a></span></p>
+                    </div>
+                </div>
+                <div class="advTable">
+                    <div class="lab">
+                        <div class="on">防雷</div>
+                        <div>防雷</div>
+                        <div>防雷</div>
+                        <div>防雷</div>
+                        <div>防雷</div>
+                        <div>防雷</div>
+                    </div>
+                    <div class="cont">
+                        <div class="items">
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京中普同安防雷科技一</div>
+                                <ul>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京中普同安防雷科技二</div>
+                                <ul>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京中普同安防雷科技三</div>
+                                <ul>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京中普同安防雷科技四</div>
+                                <ul>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京中普同安防雷科技五</div>
+                                <ul>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京中普同安防雷科技六</div>
+                                <ul>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                    <li><a href="#">安防雷科技</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                    <div>安防雷科技</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="itemList">
+
+
+        </div>
+
+        <div class="relevant">
+            <div class="title">
+                相关搜索
+            </div>
+            <div>
+                <a href="#">仪表防雷器</a>
+                <a href="#">二级防雷和三级防雷</a>
+                <a href="#">asp是什么语言</a>
+                <a href="#">上海雷迅am2-40价格</a>
+                <a href="#">上海雷迅销售电话</a>
+                <a href="#">上海雷迅防雷ak-mg</a>
+                <a href="#">aspl</a>
+                <a href="#">pdm箱</a>
+                <a href="#">pdm配电单元</a>
+            </div>
+        </div>
+
+        <div class="pageList">
+            <ul>
+                <li><a href="#">< 上一页</a></li>
+                <li>1</li>
+                <li>2</li>
+                <li class="on">3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>下一页 ></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 中间左边区域 - end -->
+
+    <!-- 中间右边区域 - start -->
+
+    <div class="contener_r">
+        <div class="advert">
+            <div class="title">国科简提供区块链系统</div>
+            <div class="ban_swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/adv1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/adv2.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/adv1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/adv2.jpeg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="des">
+                星域云 开创了全球领先的共享计算生态,以共享模式和区块链技术收集海量计算资源,将百万节点资源整合,开放给广大互联网企业,实现更高性价比,更易扩展,更环保的计算方式.
+            </div>
+            <div class="showUrl"><a href="#">国科简（北京）科技有限公司</a> <span>品牌广告</span></div>
+        </div>
+
+        <div class="hotSeach">
+            <div class="title">搜索热点
+                <div class="pageListes">
+                    <a href=""> < </a>
+                    <a href="" class="on"> <span></span></a>
+                    <a href=""> <span></span></a>
+                    <a href=""> <span></span></a>
+                    <a href="" class="go"> ></a></div>
+            </div>
+            <div class="seachItem">
+                <div class="topLab">排名 <span>搜索指数</span></div>
+                <li class="A"><a href=""><span>1</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li class="B"><a href=""><span>2</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li class="C"><a href=""><span>3</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>4</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>5</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>6</span>新闻联播 下等人 <span>1345<em class="add"></em></span></a></li>
+                <li><a href=""><span>7</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>8</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>9</span>新闻联播 下等人 <span>1345<em class="add"></em></span></a></li>
+                <li><a href=""><span>10</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <div class="source"> 数据来源 百度数据库</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间右边区域 - end -->
+
+</div>
+<script src="./img/swiper.min.js"></script>
+<script src="./img/jquery.min.js"></script>
+<script src="./img/jquery.easyui.min.js"></script>
+<script>
+
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        autoplay: true
+    });
+    var swiper = new Swiper('.swiper-hot-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        autoplay: true
+    });
+
+    $('.tool').click(function () {
+        if ($('.showTool').hasClass('act')) {
+            $('.showTool').removeClass('act')
+        } else {
+            $('.showTool').addClass('act')
+        }
+    })
+
+    $('.inputSeach').focus(function () {
+        $('.recommend').css({display: 'block'})
+    })
+    $('.inputSeach').blur(function () {
+        setTimeout(function () {
+            $('.recommend').css({display: 'none'})
+        }, 100)
+    })
+    $('.recommend .item').click(function () {
+        $('.inputSeach').val($(this).text())
+        $('.recommend').css({display: 'none'})
+    })
+
+    var tabInd = 0;
+    var time = ''
+
+    $('.advTable .lab div').hover(function () {
+        clearInterval(time)
+        tabInd = $(this).index();
+        tabSwitch(tabInd)
+    }, function () {
+        time = setInterval(automaticSwitch, 3000)
+    })
+
+    function tabSwitch(obj) {
+        $('.advTable .lab div').eq(obj).addClass('on').siblings().removeClass('on')
+        tabInd = obj
+        $('.advTable .cont .items').eq(tabInd).show().siblings().hide()
+    }
+
+    function automaticSwitch() {
+        tabInd++
+        if (tabInd >= $('.advTable .lab div').length) {
+            tabInd = 0;
+        }
+        tabSwitch(tabInd)
+    }
+
+    time = setInterval(automaticSwitch, 3000)
+
+
+</script>
+
+
+<script type="text/javascript">
+    function myformatter(date){
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate();
+        return y+'-'+(m<10?('0'+m):m)+'-'+(d<10?('0'+d):d);
+    }
+    function myparser(s){
+        alert(s)
+        if (!s) return new Date();
+        var ss = (s.split('-'));
+        var y = parseInt(ss[0],10);
+        var M = parseInt(ss[1],10);
+        var d = parseInt(ss[2],10);
+        var h = parseInt(ss[3],10);
+        var m = parseInt(ss[4],10);
+        var s = parseInt(ss[5],10);
+        if (!isNaN(y) && !isNaN(M) && !isNaN(d)&& !isNaN(h)&& !isNaN(m)&& !isNaN(s)){
+            return new Date(y,M-1,d,h,m,s);
+        } else {
+            return new Date();
+        }
+    }
+</script>
+
+
+
+<script>
+    //1. 获取路径上的请求参数
+    var keyWords = window.location.search;
+    //2. 判断是否获取到
+    if (keyWords == null || keyWords == "") {
+        // 此时都需要跳转到index.html
+        window.location.href = "/index.html";
+    }
+    //3. 将内容写入到搜索框中
+    $("#inputSeach").val(decodeURI(keyWords.split("=")[1]));
+
+    //3. 异步请求,获取结果
+    ajaxQuery(1,5);
+
+
+    function ajaxQuery(page,pageSize) {
+        //清空数据
+        $(".itemList").html("");
+        // 获取关键字
+        var keywords = $("#inputSeach").val();
+        // 获取日期范围
+        var dateStart = $("input[name=dateStart]").val();
+        var dateEnd = $("input[name=dateEnd]").val();
+        var source = $("input[name=source]").val();
+        var editor = $("input[name=editor]").val();
+
+        var params = {"keywords": keywords, "pageBean.page": page, "pageBean.pageSize": pageSize,"dateStart":dateStart,"dateEnd":dateEnd,"source":source,"editor":editor}
+
+        $.post("/ps.action",params , function (data) {
+
+            if (!data.flag) {
+                window.location.href = "/index.html"
+                return;
+            }
+
+            //1. 将响应回来的数据写入页面即可
+            $(data.pageBean.newsList).each(function () {
+                var html = "<div class=\"item\">\n" +
+                    "    <div class=\"title\"><a href='" + this.docurl + "'>" + this.title + "</a></div>\n" +
+                    "    <div class=\"contentInfo_src\">\n" +
+                    "        <a href=\"#\"><img src=\"./img/item.jpeg\" alt=\"\" class=\"imgSrc\" width=\"121px\" height=\"75px\"></a>\n" +
+                    "        <div class=\"infoBox\">\n" +
+                    "            <p class=\"describe\">\n" + this.content +
+                    "            </p>\n" +
+                    "            <p><a class=\"showurl\" href='" + this.docurl + "'>" + this.docurl + " " + this.time + " </a> <span class=\"lab\"><a\n" +
+                    "                    href=\"\">"+this.source+"  "+this.editor+" - </a></span></p>\n" +
+                    "        </div>\n" +
+                    "    </div>\n" +
+                    "</div>"
+
+                $(".itemList").append(html);
+            })
+
+            //2. 处理分页条
+
+            var ul = "<ul>"
+            //2.1 处理上一页
+            if(data.pageBean.pageNumber>1 && data.pageBean.page >1){
+
+               ul += " <li><a href='javascript:void(0)' onclick = 'ajaxQuery("+(data.pageBean.page-1) +",5)'>< 上一页</a></li>";
+            }
+            //2.1 处理中间页码
+
+            //每次只遍历当前页的前2 后2
+            if( data.pageBean.pageNumber >5){
+                if(data.pageBean.page <3 ){
+                    for(var i = 1 ; i <= 5; i++){
+                        if(data.pageBean.page == i){
+                            ul += "<li class='on' onclick='ajaxQuery("+i+",5)' >"+i+"</li>";
+                        }else{
+                            ul += "<li onclick='ajaxQuery("+i+",5)'>"+i+"</li>";
+                        }
+                    }
+                }
+
+                if(data.pageBean.page>2 && data.pageBean.page<data.pageBean.pageNumber-2){
+                    for(var i = data.pageBean.page-2 ; i <=data.pageBean.page+2; i++){
+                        if(data.pageBean.page == i){
+                            ul += "<li class='on' onclick='ajaxQuery("+i+",5)' >"+i+"</li>";
+                        }else{
+                            ul += "<li onclick='ajaxQuery("+i+",5)'>"+i+"</li>";
+                        }
+                    }
+                }
+
+                if(data.pageBean.page+2 >= data.pageBean.pageNumber){
+
+
+                    for(var i =data.pageBean.pageNumber-4; i <=data.pageBean.pageNumber ; i++){
+
+                        if(data.pageBean.page == i){
+                            ul += "<li class='on' onclick='ajaxQuery("+i+",5)' >"+i+"</li>";
+                        }else{
+                            ul += "<li onclick='ajaxQuery("+i+",5)'>"+i+"</li>";
+                        }
+                    }
+                }
+
+            }else{
+                for(var i = 1 ; i <= data.pageBean.pageNumber ; i++){
+                    if(data.pageBean.page == i){
+                        ul += "<li class='on' onclick='ajaxQuery("+i+",5)' >"+i+"</li>";
+                    }else{
+                        ul += "<li onclick='ajaxQuery("+i+",5)'>"+i+"</li>";
+                    }
+
+
+                }
+
+            }
+
+
+
+
+            //2.3 处理下一页
+            if(data.pageBean.pageNumber>1 && data.pageBean.page<data.pageBean.pageNumber){
+                ul += " <li><a href='javascript:void(0)' onclick = 'ajaxQuery("+(page+1)+",5)'>下一页 ></a></li>";
+            }
+
+            ul += "</ul>";
+
+            $(".pageList").html(ul)
+        }, "json")
+    }
+
+</script>
+
+</div>
+
+</body>
+
+</html>

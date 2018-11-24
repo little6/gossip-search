@@ -1,0 +1,15 @@
+*.iml
+/.idea
+/search-service/*.iml
+/search-service/target
+/search-service/search-service.iml
+/gossip-pojo/target
+/gossip-pojo/gossip-pojo.iml
+/gossip-searchPortal/target
+/gossip-searchPortal/gossip-searchPortal.iml
+/search-interface/target
+/search-interface/search-interface.iml
+/searchpageinterface/target
+/searchpageinterface/searchpageinterface.iml
+/search-page-service/target
+/search-page-service/search-page-service.iml
